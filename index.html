@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>♥Sweets♥</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
     <header>
@@ -19,8 +25,69 @@
         </section>
     </header>
     
-    <main>
+    <main>    
+            
+            <h2>🍬Ingresa tus datos para las ofertas de nuestros postres🍬</h2>
+            <form class="formulario" action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre"/>
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Ingresa tu apellido"/>
+            <br>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" placeholder="Ingresa tu correo" required/>
+            <br>
+            <label for="celular">Celular</label>
+            <input type="number" id="celular" placeholder="Ingresa tu número de celular" min="900000000" max="999999999" />
+            <br>
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <input type="date" id="fechaNacimiento" placeholder="Ingresa tu fecha de nacimiento" />
+            </br>
+            
+            <p>Género:</p>
+
+            <div class="style">
+            <input type="radio" name="sexo" id="femenino" value="feminino"/>
+            <label for="femenino">Femenino</label>
+            
+            <input type="radio" name="sexo" id="masculino" value="masculino"/>
+            <label for="masculino">Masculino</label>
+            
+            <input type="radio" name="sexo" id="otros" value="otros"/>
+            <label for="otros">Prefiero no especificar</label>
+            <br>
+            </div>
+
+      
+             
+                <p>Tipo de postres preferidos:</p>
+            <div class="style">
+
+                <input type="checkbox" name="postres" id="brownies" value="brownies"/>
+                <label for="brownies">Brownies</label>
         
+                <input type="checkbox"  name="postres"id="alfajores" value="alfajores" />
+                <label for="alfajores">Alfajores</label>
+        
+                <input type="checkbox" name="postres" id="nCrema" value="nCrema" />
+                <label for="nCrema">Postres de nata de crema</label><br>
+        
+                <input type="checkbox" name="postres" id="tiramisu" value="tiramisu" />
+                <label for="tiramisu">Tiramisú</label>
+        
+                <input type="checkbox" name="postres" id="chips" value="chips" />
+                <label for="chips">Galletas de chips.</label>
+        
+                <input type="checkbox" name="postres" id="flan" value="flan" />
+                <label for="flan">Flan</label>
+            </div>
+            
+            
+            <br>
+      
+            <input class="button" type="button" value="Enviar mis datos"/>
+          </form>
     </main>
 </body>
 </html>
